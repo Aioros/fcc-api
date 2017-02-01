@@ -1,13 +1,14 @@
 {
   "name": "fcc-timestamp-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "An implementation of FreeCodeCamp's Timestamp Microservice API",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aioros",
+  "repository": "https://github.com/Aioros/fcc-timestamp-api",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.1",
