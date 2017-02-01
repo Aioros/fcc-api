@@ -1,1 +1,1 @@
-This is an implementation of FreeCodeCamp's Timestamp Microservice API, as descripted [here](https://www.freecodecamp.com/challenges/timestamp-microservice).
+This is an implementation of FreeCodeCamp's Timestamp Microservice API, as described [here](https://www.freecodecamp.com/challenges/timestamp-microservice).
