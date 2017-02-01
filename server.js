@@ -1,7 +1,12 @@
 var express = require('express');
 var app = express();
 
-app.get('/', express.static(__dirname));
+app.set('views', './views');
+app.set('view engine', 'pug');
+
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Hey', message: req.protocol + '://' + req.get('host') });
+});
 
 app.get('/:input', function (req, res) {
   
@@ -24,6 +29,6 @@ app.get('/:input', function (req, res) {
   
 });
 
-app.listen(8080, function () {
-  console.log('App listening on port 8080');
+app.listen(process.env.PORT || 8080, function () {
+  console.log('App listening');
 })
